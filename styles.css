@@ -321,14 +321,12 @@ input {
   justify-content: center;
 }
 
-.hero-man-img {
+.hero-man-svg {
   width: 100%;
-  max-width: 560px;
+  max-width: 580px;
   height: auto;
-  object-fit: contain;
-  filter: contrast(1.15) brightness(0.95);
-  -webkit-mask-image: radial-gradient(ellipse 65% 65% at 50% 50%, rgba(0, 0, 0, 1) 35%, rgba(0, 0, 0, 0) 90%);
-  mask-image: radial-gradient(ellipse 65% 65% at 50% 50%, rgba(0, 0, 0, 1) 35%, rgba(0, 0, 0, 0) 90%);
+  display: block;
+  filter: contrast(1.1) brightness(0.95);
 }
 
 /* Radial Floating Stat Cards */
