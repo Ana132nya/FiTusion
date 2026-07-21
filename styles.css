@@ -461,29 +461,36 @@ input {
 /* Hero Brands Bar */
 .hero-brands {
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  margin-top: 60px;
-  padding: 24px 0 10px;
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  margin-top: 50px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
   position: relative;
   z-index: 3;
-  gap: 20px;
-  flex-wrap: wrap;
+  gap: 15px;
 }
 
 .brand-item {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  color: rgba(255, 255, 255, 0.7);
-  opacity: 0.85;
+  color: rgba(255, 255, 255, 0.75);
+  opacity: 0.8;
   transition: all var(--transition-base);
+  flex-shrink: 0;
+}
+
+.brand-item svg {
+  height: 24px;
+  width: auto;
+  fill: currentColor;
 }
 
 .brand-item:hover {
-  color: var(--clr-white);
+  color: var(--clr-accent);
   opacity: 1;
   transform: translateY(-2px);
 }
