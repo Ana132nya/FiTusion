@@ -277,7 +277,7 @@ input {
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 1;
+  z-index: 2;
 }
 
 .hero-bg img {
@@ -296,15 +296,15 @@ input {
   height: 100%;
   background: linear-gradient(
     to bottom,
-    rgba(10, 10, 10, 0.3) 0%,
-    rgba(10, 10, 10, 0.5) 50%,
-    rgba(10, 10, 10, 0.95) 100%
+    rgba(10, 10, 10, 0.1) 0%,
+    rgba(10, 10, 10, 0.2) 50%,
+    rgba(10, 10, 10, 0.92) 100%
   );
+  z-index: 1;
 }
 
 .hero .container {
   position: relative;
-  z-index: 2;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -320,6 +320,8 @@ input {
   font-style: italic;
   margin-bottom: 40px;
   text-shadow: 0 4px 40px rgba(0, 0, 0, 0.6);
+  position: relative;
+  z-index: 1;
 }
 
 .hero-title .accent {
@@ -333,6 +335,8 @@ input {
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 20px;
+  position: relative;
+  z-index: 3;
 }
 
 .stat-card {
@@ -379,6 +383,8 @@ input {
   align-items: flex-end;
   width: 100%;
   margin-top: 50px;
+  position: relative;
+  z-index: 3;
 }
 
 .hero-social-proof {
