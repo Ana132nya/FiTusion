@@ -71,7 +71,18 @@
 
       <!-- Central Bodybuilder Wrapper with 4 Floating Stat Cards -->
       <div class="hero-man-wrapper">
-        <img src="images/hero-bodybuilder.png" alt="FiTusion Athlete" class="hero-man-img" />
+        <svg width="580" height="650" viewBox="0 0 580 650" class="hero-man-svg">
+          <defs>
+            <radialGradient id="manRadialMask" cx="50%" cy="45%" r="50%" fx="50%" fy="45%">
+              <stop offset="45%" stop-color="#ffffff" stop-opacity="1" />
+              <stop offset="85%" stop-color="#ffffff" stop-opacity="0" />
+            </radialGradient>
+            <mask id="bodybuilderMask">
+              <rect x="0" y="0" width="580" height="650" fill="url(#manRadialMask)" />
+            </mask>
+          </defs>
+          <image href="images/hero-bodybuilder.png" x="0" y="0" width="580" height="650" preserveAspectRatio="xMidYMin slice" mask="url(#bodybuilderMask)" />
+        </svg>
 
         <!-- Floating Stat Cards (Radial Layout) -->
         <div class="stat-card stat-card-top-left">
