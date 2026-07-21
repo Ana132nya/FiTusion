@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FiTusion — Sculpt Your Body, Elevate Your Spirit</title>
+  <meta name="description" content="FiTusion – Your go-to for personalized workouts, meal plans, and expert fitness advice. Sculpt your body and elevate your spirit." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet" />
+
+  <!-- Lucide Icons CDN -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header" id="header">
+    <div class="container">
+      <a href="#" class="logo">
+        <div class="logo-icon">F</div>
+        FiTusion
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#hero" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Features</a>
+        <a href="#experience">Service</a>
+        <a href="#courses">Exercise</a>
+      </nav>
+
+      <div class="nav-buttons" id="navButtons">
+        <a href="#cta" class="btn-contact">Contact Us</a>
+        <a href="#cta" class="btn-get-started-nav">Get Started</a>
+      </div>
+
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <img src="images/hero-bodybuilder.png" alt="Fitness athlete" />
+    </div>
+
+    <div class="hero-side-nav left">P &nbsp; R &nbsp; E &nbsp; V</div>
+    <div class="hero-side-nav right">N &nbsp; E &nbsp; X &nbsp; T</div>
+
+    <div class="container">
+      <h1 class="hero-title">
+        Sculpt <span class="accent">Your</span> Body,<br />
+        Elevate <span class="accent">Your</span> Spirit
+      </h1>
+
+      <div class="hero-stats">
+        <div class="stat-card">
+          <span class="stat-icon">⏱</span>
+          <span class="stat-label">Hours</span>
+          <span class="stat-value">1.5</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-icon">🔥</span>
+          <span class="stat-label">Kcal</span>
+          <span class="stat-value">550</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-icon">🏃</span>
+          <span class="stat-label">Poses</span>
+          <span class="stat-value">20</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-icon">💪</span>
+          <span class="stat-label">Sets</span>
+          <span class="stat-value">5</span>
+        </div>
+      </div>
+
+      <div class="hero-bottom">
+        <div class="hero-social-proof">
+          <div class="avatar-stack">
+            <img src="images/trainer-blake.png" alt="User" />
+            <img src="images/trainer-liam.png" alt="User" />
+            <img src="images/trainer-logan.png" alt="User" />
+          </div>
+          <div class="social-proof-text">
+            <div class="count">12k+</div>
+            <div class="label">Happy Spirits</div>
+          </div>
+        </div>
+
+        <a href="#cta" class="btn-lets-start">
+          Let's Start <span class="arrows">› › ›</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section class="about-section" id="about">
+    <div class="container">
+      <div class="section-heading animate-on-scroll">
+        <h2><em>Inspired to</em><br /><span class="accent">Inspire Your Best Self</span></h2>
+        <p>We're Your Partner In Achieving A Healthier, Stronger, And More Confident You.</p>
+      </div>
+
+      <div class="about-card animate-on-scroll">
+        <div class="about-features">
+          <div class="about-feature-item">
+            <div class="about-feature-icon">🌿</div>
+            <span>Nutrition Guidance</span>
+          </div>
+          <div class="about-feature-item">
+            <div class="about-feature-icon">🏋️</div>
+            <span>Expert Trainers</span>
+          </div>
+          <div class="about-feature-item">
+            <div class="about-feature-icon">📊</div>
+            <span>Progress Tracking</span>
+          </div>
+          <div class="about-feature-item">
+            <div class="about-feature-icon">👑</div>
+            <span>Premium Membership</span>
+          </div>
+          <div class="about-feature-item">
+            <div class="about-feature-icon">🤝</div>
+            <span>Community Support</span>
+          </div>
+          <div class="about-feature-item">
+            <div class="about-feature-icon">🚀</div>
+            <span>Next-Level Fitness Spaces</span>
+          </div>
+        </div>
+        <div class="about-image">
+          <img src="images/about-bodybuilder.png" alt="Fitness inspiration" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES SECTION ===== -->
+  <section class="services-section" id="services">
+    <div class="container">
+      <div class="section-heading animate-on-scroll">
+        <h2><em>Discover</em><br /><span class="accent">What Sets Us Apart</span></h2>
+        <p>We Deliver A Fitness Experience That's Truly One-Of-A-Kind. Explore How We Help You Achieve Your Goals Faster And Smarter.</p>
+      </div>
+
+      <div class="services-carousel animate-on-scroll">
+        <div class="services-track" id="servicesTrack">
+          <div class="service-card">
+            <div class="service-icon">❤️</div>
+            <h3>Cardio Training</h3>
+            <p>Boost endurance and heart health with high-energy cardio sessions designed to keep you moving.</p>
+            <a href="#" class="btn-see-plan">See Plan</a>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">💪</div>
+            <h3>Strength Build</h3>
+            <p>Develop power and resilience through expert-guided strength training tailored to all fitness levels.</p>
+            <a href="#" class="btn-see-plan">See Plan</a>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">🔥</div>
+            <h3>Fat Loss</h3>
+            <p>Shed unwanted fat with dynamic workout routines and fat-burning strategies that deliver lasting results.</p>
+            <a href="#" class="btn-see-plan">See Plan</a>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">⚡</div>
+            <h3>HIIT Workouts</h3>
+            <p>Maximize calorie burn and improve fitness with short, intense high-intensity interval training sessions.</p>
+            <a href="#" class="btn-see-plan">See Plan</a>
+          </div>
+        </div>
+        <div class="carousel-dots" id="carouselDots">
+          <div class="carousel-dot active" data-index="0"></div>
+          <div class="carousel-dot" data-index="1"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== COURSES SECTION ===== -->
+  <section class="courses-section" id="courses">
+    <div class="container">
+      <div class="section-heading animate-on-scroll">
+        <h2><em>Train Smarter</em><br /><span class="accent">Unleash Your Potential</span></h2>
+        <p>Unlock Your Full Potential With Our Expertly Designed Courses, Tailored To Help You Maximize Results In Less Time.</p>
+      </div>
+
+      <div class="courses-grid animate-on-scroll">
+        <div class="course-card">
+          <img src="images/course-barbell.png" alt="Barbell Basics" />
+          <span class="course-name">Barbell Basics</span>
+        </div>
+        <div class="course-card">
+          <img src="images/course-kettlebell.png" alt="Kettlebell Masterclass" />
+          <span class="course-name">Kettlebell Masterclass</span>
+        </div>
+        <div class="course-card">
+          <img src="images/course-cardio.png" alt="Cardio Power Boost" />
+          <span class="course-name">Cardio Power Boost</span>
+        </div>
+        <div class="course-card">
+          <img src="images/course-hypertrophy.png" alt="Hypertrophy" />
+          <span class="course-name">Hypertrophy</span>
+        </div>
+        <div class="course-card">
+          <img src="images/course-rope.png" alt="Rope Climbing" />
+          <span class="course-name">Rope Climbing</span>
+        </div>
+        <div class="course-card">
+          <img src="images/course-trx.png" alt="TRX Suspension" />
+          <span class="course-name">TRX Suspension</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE SECTION ===== -->
+  <section class="experience-section" id="experience">
+    <div class="container">
+      <div class="section-heading animate-on-scroll">
+        <h2><em>Experience</em><br /><span class="accent">Fitness Like Never Before</span></h2>
+        <p>Transform The Way You Train With Innovative Workouts, Expert Guidance, And State-Of-The-Art Facilities.</p>
+      </div>
+
+      <div class="experience-cards animate-on-scroll">
+        <div class="experience-card">
+          <h3>Endurance Evolution</h3>
+          <p>Boost Your Stamina And Resilience With Tailored Cardio And Endurance Workouts Designed To Keep You Moving Stronger For Longer.</p>
+          <a href="#" class="btn-read-more">Read More</a>
+          <div class="experience-metric">
+            <div class="metric-circle">
+              <span class="value">95</span>
+              <span class="unit">BPM</span>
+            </div>
+          </div>
+        </div>
+        <div class="experience-card">
+          <h3>Speed Surge</h3>
+          <p>Boost Your Agility And Explosiveness With High-Intensity, Sprint And Movement Drills. Speed Surge Is Designed To Take Your Performance To The Next Level.</p>
+          <a href="#" class="btn-read-more">Read More</a>
+          <div class="experience-metric">
+            <div class="metric-circle">
+              <span class="value">1024</span>
+              <span class="unit">STEPS</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TRAINERS SECTION ===== -->
+  <section class="trainers-section" id="trainers">
+    <div class="container">
+      <div class="section-heading animate-on-scroll">
+        <h2><em>Your Fitness</em><br /><span class="accent">Goals, Their Expertise</span></h2>
+        <p>Our Team Of Certified Trainers Brings Unparalleled Expertise To Help You Achieve Your Fitness Goals.</p>
+      </div>
+
+      <div class="trainers-grid animate-on-scroll">
+        <div class="trainer-card">
+          <div class="trainer-image">
+            <img src="images/trainer-blake.png" alt="Blake Hunter" />
+          </div>
+          <h3>Blake Hunter</h3>
+          <div class="trainer-quote">
+            <span>//</span>
+            <span>/</span>
+          </div>
+        </div>
+        <div class="trainer-card">
+          <div class="trainer-image">
+            <img src="images/trainer-liam.png" alt="Liam Crossfit" />
+          </div>
+          <h3>Liam Crossfit</h3>
+          <div class="trainer-quote">
+            <span>//</span>
+            <span>/</span>
+          </div>
+        </div>
+        <div class="trainer-card">
+          <div class="trainer-image">
+            <img src="images/trainer-logan.png" alt="Logan Torque" />
+          </div>
+          <h3>Logan Torque</h3>
+          <div class="trainer-quote">
+            <span>//</span>
+            <span>/</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS SECTION ===== -->
+  <section class="testimonials-section" id="testimonials">
+    <div class="container">
+      <div class="section-heading animate-on-scroll">
+        <h2><em>Your Success</em><br /><span class="accent">Stories, Our Inspiration</span></h2>
+        <p>See How Our Customers Have Achieved Their Goals And Let Their Journeys Inspire Yours!</p>
+      </div>
+
+      <div class="testimonial-wrapper animate-on-scroll">
+        <div class="testimonial-main">
+          <div class="testimonial-image">
+            <img src="images/testimonial-james.png" alt="James T." />
+          </div>
+          <div class="testimonial-content">
+            <blockquote>
+              "I Love The Variety Of Workouts On Fit Fusion. Whether It's HIIT, Yoga, Or Strength Training, There's Always Something New To Try. The Progress Tracking Tools Keep Me Motivated!"
+            </blockquote>
+            <div class="testimonial-author">
+              <div class="name">– James T.</div>
+              <div class="location">LA, USA</div>
+            </div>
+            <div class="testimonial-stars">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-nav">
+          <button id="testimonialPrev" aria-label="Previous testimonial">‹</button>
+          <button id="testimonialNext" aria-label="Next testimonial">›</button>
+        </div>
+
+        <div class="testimonial-side-cards">
+          <div class="side-card">
+            <img src="images/testimonial-ryan.png" alt="Ryan Blaze" />
+            <span class="side-card-name">Ryan Blaze</span>
+          </div>
+          <div class="side-card">
+            <img src="images/trainer-logan.png" alt="Ethan Maxx" />
+            <span class="side-card-name">Ethan Maxx</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA SECTION ===== -->
+  <section class="cta-section" id="cta">
+    <div class="container">
+      <div class="cta-card animate-on-scroll">
+        <h2>Connect Engage Transform</h2>
+        <p>Join A Vibrant Community For Fuel Motivation, Engagement Drives Progress, And Transformation.</p>
+        <form class="cta-form" id="ctaForm">
+          <input type="email" placeholder="Your Email" required aria-label="Email address" />
+          <button type="submit">Join Now</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <div class="logo-icon">F</div>
+            FiTusion
+          </a>
+          <p>Your Go-To For Personalized Workouts, Meal Plans, And Expert Fitness Advice</p>
+        </div>
+
+        <div class="footer-social">
+          <h4>Follow Us On</h4>
+          <div class="social-icons">
+            <a href="#" aria-label="Facebook">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="#" aria-label="LinkedIn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a href="#" aria-label="Instagram">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="#" aria-label="X (Twitter)">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4l11.733 16h4.267l-11.733 -16z"/><path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-contact">
+          <h4>Contact</h4>
+          <div class="footer-contact-info">
+            <p>Monday-Sunday</p>
+            <p>8:00 AM - 5:00 PM</p>
+            <p style="margin-top: 12px;">E-mail</p>
+            <a href="mailto:Fitusion@gmail.com">Fitusion@gmail.com</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-bottom-links">
+          <a href="#hero">Home</a>
+          <a href="#about">About</a>
+          <a href="#services">Features</a>
+          <a href="#experience">Service</a>
+          <a href="#courses">Exercise</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
