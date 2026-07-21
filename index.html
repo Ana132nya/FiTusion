@@ -9,7 +9,7 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet" />
 
   <!-- Lucide Icons CDN -->
   <link rel="stylesheet" href="styles.css" />
@@ -21,7 +21,7 @@
     <div class="container">
       <a href="#" class="logo">
         <div class="logo-icon">F</div>
-        FiTusion
+        Fi<span class="logo-accent">Tusion</span>
       </a>
 
       <nav class="nav-links" id="navLinks">
@@ -47,48 +47,81 @@
 
   <!-- ===== HERO SECTION ===== -->
   <section class="hero" id="hero">
-    <div class="hero-bg">
-      <img src="images/hero-bodybuilder.png" alt="Fitness athlete" />
+    <div class="hero-bg-gradient"></div>
+
+    <div class="hero-side-nav left">
+      <span>P</span>
+      <span>R</span>
+      <span>E</span>
+      <span>V</span>
+    </div>
+    <div class="hero-side-nav right">
+      <span>N</span>
+      <span>E</span>
+      <span>X</span>
+      <span>T</span>
     </div>
 
-    <div class="hero-side-nav left">P &nbsp; R &nbsp; E &nbsp; V</div>
-    <div class="hero-side-nav right">N &nbsp; E &nbsp; X &nbsp; T</div>
-
-    <div class="container">
+    <div class="container hero-container">
+      <!-- Headline positioned behind bodybuilder -->
       <h1 class="hero-title">
-        Sculpt <span class="accent">Your</span> Body,<br />
-        Elevate <span class="accent">Your</span> Spirit
+        Sculpt <span class="accent-olive">Your</span> Body,<br />
+        Elevate <span class="accent-olive">Your</span> Spirit
       </h1>
 
-      <div class="hero-stats">
-        <div class="stat-card">
-          <span class="stat-icon">⏱</span>
-          <span class="stat-label">Hours</span>
-          <span class="stat-value">1.5</span>
+      <!-- Central Bodybuilder Wrapper with 4 Floating Stat Cards -->
+      <div class="hero-man-wrapper">
+        <img src="images/hero-bodybuilder.png" alt="FiTusion Athlete" class="hero-man-img" />
+
+        <!-- Floating Stat Cards (Radial Layout) -->
+        <div class="stat-card stat-card-top-left">
+          <div class="stat-icon-circle">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <div class="stat-info">
+            <span class="stat-label">Hours</span>
+            <span class="stat-value">1.5</span>
+          </div>
         </div>
-        <div class="stat-card">
-          <span class="stat-icon">🔥</span>
-          <span class="stat-label">Kcal</span>
-          <span class="stat-value">550</span>
+
+        <div class="stat-card stat-card-top-right">
+          <div class="stat-icon-circle">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 20l-4-4 3-4-4-2 1-4"/><circle cx="15" cy="4" r="2"/></svg>
+          </div>
+          <div class="stat-info">
+            <span class="stat-label">Poses</span>
+            <span class="stat-value">20</span>
+          </div>
         </div>
-        <div class="stat-card">
-          <span class="stat-icon">🏃</span>
-          <span class="stat-label">Poses</span>
-          <span class="stat-value">20</span>
+
+        <div class="stat-card stat-card-bottom-left">
+          <div class="stat-icon-circle">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 23c-4.97 0-9-3.58-9-8 0-4.5 5-11 9-14 4 3 9 9.5 9 14 0 4.42-4.03 8-9 8z"/></svg>
+          </div>
+          <div class="stat-info">
+            <span class="stat-label">Kcal</span>
+            <span class="stat-value">550</span>
+          </div>
         </div>
-        <div class="stat-card">
-          <span class="stat-icon">💪</span>
-          <span class="stat-label">Sets</span>
-          <span class="stat-value">5</span>
+
+        <div class="stat-card stat-card-bottom-right">
+          <div class="stat-icon-circle">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 6.5h11M6.5 17.5h11M3 10v4M21 10v4M5 8v8M19 8v8"/></svg>
+          </div>
+          <div class="stat-info">
+            <span class="stat-label">Sets</span>
+            <span class="stat-value">5</span>
+          </div>
         </div>
       </div>
 
+      <!-- Hero Bottom Row -->
       <div class="hero-bottom">
         <div class="hero-social-proof">
           <div class="avatar-stack">
-            <img src="images/trainer-blake.png" alt="User" />
-            <img src="images/trainer-liam.png" alt="User" />
-            <img src="images/trainer-logan.png" alt="User" />
+            <img src="images/trainer-blake.png" alt="User 1" />
+            <img src="images/trainer-liam.png" alt="User 2" />
+            <img src="images/trainer-logan.png" alt="User 3" />
           </div>
           <div class="social-proof-text">
             <div class="count">12k+</div>
