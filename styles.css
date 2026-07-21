@@ -458,6 +458,36 @@ input {
   letter-spacing: 4px;
 }
 
+/* Hero Brands Bar */
+.hero-brands {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 60px;
+  padding: 24px 0 10px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  position: relative;
+  z-index: 3;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.brand-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.7);
+  opacity: 0.85;
+  transition: all var(--transition-base);
+}
+
+.brand-item:hover {
+  color: var(--clr-white);
+  opacity: 1;
+  transform: translateY(-2px);
+}
+
 /* Side nav indicators */
 .hero-side-nav {
   position: absolute;
