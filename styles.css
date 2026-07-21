@@ -19,7 +19,7 @@
   --clr-overlay: rgba(0, 0, 0, 0.55);
 
   /* Typography */
-  --ff-heading: 'Playfair Display', Georgia, serif;
+  --ff-heading: 'Outfit', 'Inter', system-ui, -apple-system, sans-serif;
   --ff-body: 'Inter', system-ui, -apple-system, sans-serif;
 
   /* Spacing */
