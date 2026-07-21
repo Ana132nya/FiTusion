@@ -266,128 +266,164 @@ input {
   position: relative;
   min-height: 100vh;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
   overflow: hidden;
-  padding-top: 80px;
+  padding-top: 100px;
+  padding-bottom: 20px;
+  background: radial-gradient(circle at 50% 30%, #1c2210 0%, #0a0a0a 70%);
 }
 
-.hero-bg {
-  position: absolute;
-  top: 0;
-  left: 0;
+.hero-container {
+  position: relative;
   width: 100%;
-  height: 100%;
-  z-index: 2;
-}
-
-.hero-bg img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center top;
-}
-
-.hero-bg::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(
-    to bottom,
-    rgba(10, 10, 10, 0.0) 0%,
-    rgba(10, 10, 10, 0.0) 30%,
-    rgba(10, 10, 10, 0.3) 60%,
-    rgba(10, 10, 10, 0.92) 100%
-  );
-  z-index: 1;
-}
-
-/* Left/Right edge darkening so text-behind effect is clean */
-.hero-bg::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background:
-    linear-gradient(to right, rgba(10, 10, 10, 0.7) 0%, transparent 25%),
-    linear-gradient(to left, rgba(10, 10, 10, 0.7) 0%, transparent 25%);
-  z-index: 1;
-}
-
-.hero .container {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 var(--container-px);
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
 }
 
-.hero-title {
-  font-family: var(--ff-heading);
-  font-size: clamp(3rem, 7vw, 5.5rem);
-  font-weight: 700;
-  text-align: center;
-  line-height: 1.1;
-  font-style: italic;
-  margin-bottom: 40px;
-  text-shadow: 0 4px 40px rgba(0, 0, 0, 0.6);
-  position: relative;
-  z-index: 1;
-}
-
-.hero-title .accent {
+.logo-accent {
   color: var(--clr-accent);
 }
 
-/* Stat Cards */
-.hero-stats {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 20px;
+/* Headline positioned behind man */
+.hero-title {
+  font-family: 'Outfit', sans-serif;
+  font-size: clamp(3.2rem, 7.2vw, 5.8rem);
+  font-weight: 800;
+  text-align: center;
+  line-height: 1.1;
+  letter-spacing: -0.5px;
+  color: #ffffff;
+  margin-top: 10px;
+  margin-bottom: -150px;
   position: relative;
-  z-index: 3;
+  z-index: 1;
+  white-space: nowrap;
 }
 
-.stat-card {
-  background: rgba(197, 248, 42, 0.12);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(197, 248, 42, 0.2);
-  border-radius: var(--radius-md);
-  padding: 20px 28px;
+.hero-title .accent-olive {
+  color: #8da83b;
+  opacity: 0.95;
+}
+
+/* Central Bodybuilder Wrapper with 4 Radial Floating Stat Cards */
+.hero-man-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-man-img {
+  width: 100%;
+  max-width: 560px;
+  height: auto;
+  object-fit: contain;
+  filter: contrast(1.05) brightness(0.98);
+}
+
+/* Radial Floating Stat Cards */
+.hero-man-wrapper .stat-card {
+  position: absolute;
+  background: linear-gradient(135deg, rgba(40, 48, 25, 0.82), rgba(20, 24, 15, 0.88));
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(197, 248, 42, 0.35);
+  border-radius: 20px;
+  padding: 16px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 6px;
-  min-width: 120px;
-  transition: transform var(--transition-base);
+  min-width: 110px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.65);
+  z-index: 4;
+  transition: transform 0.3s ease, border-color 0.3s ease;
 }
 
-.stat-card:hover {
-  transform: translateY(-4px);
+.hero-man-wrapper .stat-card:hover {
+  transform: translateY(-4px) scale(1.03);
+  border-color: var(--clr-accent);
 }
 
-.stat-card .stat-icon {
-  font-size: 1.5rem;
-  color: var(--clr-accent);
+.stat-icon-circle {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: var(--clr-accent);
+  color: #0a0a0a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.stat-card .stat-label {
-  font-size: 0.75rem;
+.stat-card-top-left {
+  top: 10%;
+  left: -2%;
+}
+
+.stat-card-top-right {
+  top: 10%;
+  right: -2%;
+}
+
+.stat-card-bottom-left {
+  bottom: 22%;
+  left: -5%;
+}
+
+.stat-card-bottom-right {
+  bottom: 22%;
+  right: -5%;
+}
+
+.stat-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stat-label {
+  font-size: 0.78rem;
   color: var(--clr-gray-200);
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
+  font-weight: 500;
 }
 
-.stat-card .stat-value {
-  font-size: 1.6rem;
-  font-weight: 700;
+.stat-value {
+  font-size: 1.5rem;
+  font-weight: 800;
   color: var(--clr-white);
+}
+
+/* Side Navigation PREV / NEXT */
+.hero-side-nav {
+  position: absolute;
+  top: 48%;
+  transform: translateY(-50%);
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.45);
+  letter-spacing: 2px;
+}
+
+.hero-side-nav.left {
+  left: 35px;
+}
+
+.hero-side-nav.right {
+  right: 35px;
 }
 
 /* Hero Bottom Row */
@@ -396,9 +432,9 @@ input {
   justify-content: space-between;
   align-items: flex-end;
   width: 100%;
-  margin-top: 50px;
+  margin-top: 10px;
   position: relative;
-  z-index: 3;
+  z-index: 5;
 }
 
 .hero-social-proof {
@@ -412,21 +448,22 @@ input {
 }
 
 .avatar-stack img {
-  width: 42px;
-  height: 42px;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
   border: 2px solid var(--clr-bg);
   object-fit: cover;
 }
 
 .avatar-stack img:not(:first-child) {
-  margin-left: -12px;
+  margin-left: -14px;
 }
 
 .social-proof-text .count {
   font-size: 1.8rem;
   font-weight: 800;
   color: var(--clr-white);
+  line-height: 1;
 }
 
 .social-proof-text .label {
@@ -450,7 +487,7 @@ input {
 .btn-lets-start:hover {
   background: var(--clr-accent-dark);
   transform: translateY(-3px);
-  box-shadow: 0 8px 30px rgba(197, 248, 42, 0.3);
+  box-shadow: 0 8px 30px rgba(197, 248, 42, 0.35);
 }
 
 .btn-lets-start .arrows {
@@ -465,12 +502,12 @@ input {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  margin-top: 50px;
+  margin-top: 40px;
   padding-top: 24px;
   border-top: 1px solid rgba(255, 255, 255, 0.12);
   position: relative;
-  z-index: 3;
-  gap: 15px;
+  z-index: 5;
+  gap: 20px;
 }
 
 .brand-item {
@@ -478,7 +515,7 @@ input {
   align-items: center;
   justify-content: center;
   color: rgba(255, 255, 255, 0.75);
-  opacity: 0.8;
+  opacity: 0.85;
   transition: all var(--transition-base);
   flex-shrink: 0;
 }
@@ -494,20 +531,6 @@ input {
   opacity: 1;
   transform: translateY(-2px);
 }
-
-/* Side nav indicators */
-.hero-side-nav {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 3;
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-  font-size: 0.85rem;
-  font-weight: 600;
-  letter-spacing: 6px;
-  color: var(--clr-gray-300);
   writing-mode: vertical-lr;
 }
 
